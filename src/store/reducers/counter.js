@@ -18,12 +18,12 @@ const reducer = (state = initialState, action)=>{
         case actionsTypes.ADD:
             return{
                 ...state,
-                counter: state.counter + action.value
+                counter: state.counter + action.val
             }
         case actionsTypes.SUB:
             return{
                 ...state,
-                counter: state.counter - action.value
+                counter: state.counter - action.val
             }
     }
     return state
